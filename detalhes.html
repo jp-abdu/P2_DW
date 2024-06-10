@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/escudo.png" sizes="16x16">
+  <title>Detalhes do Jogador</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script type="module" src="detalhes.mjs"></script>
+</head>
+<body>
+  <header>
+    <h1>Detalhes do Jogador</h1>
+    <button id="logout">Sair</button>
+  </header>
+  <div id="conteudo-detalhes" class="detalhes-container">
+    <div class="detalhes-box">
+      <div class="imagem-nome-container">
+        <img id="imagem" src="" alt="Imagem do Jogador" class="imagem-jogador">
+        <div class="informacoes-jogador">
+          <h2 id="nome" class="nome-jogador"></h2>
+          <p id="detalhes_nascimento"><strong>Nascimento:</strong> <span id="nascimento"></span></p>
+          <p id="detalhes_altura"><strong>Altura:</strong> <span id="altura"></span></p>
+          <p id="detalhes_posicao"><strong>Posição:</strong> <span id="posicao"></span></p>
+        </div>
+      </div>
+      <p id="detalhes"></p>
+    </div>
+  </div>
+  <button id="voltar" class="botao-voltar">Voltar</button>
+</body>
+</html>

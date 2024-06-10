@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+@keyframes blink {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+p,a {
+  font-family: 'Neuton', serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Alumni Sans Inline One', sans-serif;
+  font-weight: normal;
+}
+
+button{
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em 1em; 
+  cursor: pointer; 
+  font-size: 1.3em; 
+  max-width: 6em;
+}
+
+body {
+  background: linear-gradient(90deg, black, white);
+}
+
+header {
+  background-color: rgb(169, 149, 0);
+  padding: 0.5em 1em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border: solid white;
+  border-radius: 2rem;
+}
+
+h1 {
+  color: white;
+  margin: 0px;
+  flex-grow: 1;
+}
+
+#logout {
+  border-radius: 2rem;
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+#barra-escolhas {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  margin: 2em 0px;
+}
+
+#barra-escolhas button {
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 1.3em;
+  max-width: 6em;
+}
+
+#select-plantel {
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  display: block;
+  margin: 1em auto 0.5em;
+  font-size: larger;
+}
+
+#inputPesquisa {
+  border: transparent;
+  border-radius: 2rem;
+  text-align: center;
+  line-height: 3em;
+  max-width: 80%;
+  width: 30em;
+}
+
+#texto-espera {
+  animation: 1s ease-out 0s infinite normal none running blink;
+  display: none;
+  margin: auto;
+  width: min-content;
+  }
+
+
+#conteudo {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+
+#barra-escolhas button {
+  text-align: center;
+}
+
+
+input[name="pesquisa"] {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15rem;
+  padding: .3rem;
+  text-align: center;
+  background-color: white;
+  border: solid 1px #ccc;
+  margin: 0.5rem;
+  border-radius: 5%;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+
+.card .nome-jogador {
+  font-weight: bold;
+  margin: 10px 0;
+  min-height: 3em;
+}
+
+
+.card .botao-detalhes {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+#conteudo div {
+  background-color: white;
+  border: solid 1px #ccc;
+  padding: .3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detalhes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.detalhes-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  max-height: 450px;
+}
+
+.imagem-jogador {
+  max-width: 400px;
+  max-height: 400px;
+  margin-right: 3rem; 
+}
+.informacoes-jogador {
+  text-align: left;
+  max-width: 700px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.informacoes-jogador h2 {
+  font-size: 2.5rem; 
+}
+
+#detalhes {
+  font-size: 1.5rem;
+  width: 300px;
+  margin-left: 3rem;
+  overflow: auto; 
+  height: calc(1.5em * 8); 
+  line-height: 1.5em; 
+  white-space: normal; 
+}
+
+
+.botao-voltar {
+  font-size: 1rem; 
+  padding: 1rem 1.8rem; 
+  border-radius: 1.5rem; 
+  position: relative; 
+  bottom: 8rem; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+  #btn_login {
+    width: 7rem; 
+    height: 3rem;
+    background-color: rgb(0, 0, 0);
+    border: transparent;
+    border-radius: 0.5rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+
+  #instrucao{
+    margin: 0px auto;
+    padding-top: 0.3rem;
+  }
+
+  #entrada-senha{
+    border: solid black;
+    border-radius: 0.5rem;
+    border-width: 0.1rem;
+    padding: 0.3em;
+    margin: 0.5em;
+  }
+
+  #formulario{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #titulo_login{
+    margin: 0px;
+    color: black;
+  }
+
+  #container_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #body_container_login{
+    border: solid #a99500;
+    border-radius: 0.5rem; 
+    padding: 5rem; 
+    background-color: rgb(199, 199, 199);
+  }
+
+  #body_login{
+    background: linear-gradient(90deg,black, white); 
+    display: flex; 
+    height: 100vh; 
+    margin: 8px; 
+    justify-content: center; 
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    #body_container_login{
+        width: 210px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #conteudo {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      padding: 0 10px;
+    }
+  
+    #barra-escolhas {
+      display: none;
+    }
+  
+    #select-plantel {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    #conteudo {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      padding: 0 10px;
+    }
+  
+    #barra-escolhas {
+      display: flex;
+    }
+  
+    #select-plantel {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    #conteudo {
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+    }
+  
+    #barra-escolhas {
+      display: flex;
+    }
+  
+    #select-plantel {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .detalhes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .detalhes-box {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        width: 400px;
+        margin-top: 40rem;
+        max-height: 1100px;
+    }
+    .imagem-nome-container {
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+    }
+    .imagem-jogador {
+        width: 100%;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+    }
+    .nome-jogador {
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+        text-align: center;
+    }
+    .informacoes-jogador {
+        text-align: center;
+        width: 100%;
+    }
+    .informacoes-jogador p {
+        margin-bottom: 0.5rem;
+        margin-right: 1rem;
+    }
+    #detalhes {
+        text-align: center;
+        padding: 0.5rem;
+        margin-right: 2rem;
+    }
+    .botao-voltar {
+        font-size: .8rem;
+        padding: .4rem 1.5rem;
+        border-radius: 1.5rem;
+        margin-top: 43rem;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+}
+.imagem-nome-container {
+  display: flex;
+  align-items: center;
+}
+
+.informacoes-jogador {
+  margin-left: 2rem;
+}
+

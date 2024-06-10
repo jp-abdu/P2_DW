@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/escudo.png" sizes="16x16">
+  <title>Atletas Botafogo</title>
+  <script type="module" src="principal.mjs"></script>
+  <link rel="stylesheet" href="estilo.css">
+  <script>
+    // Verifica se o usuário está logado
+    if (!sessionStorage.getItem('logado')) {
+      window.location.href = 'index.html';
+    }
+  </script>
+</head>
+<body>
+    <header>
+      <h1>Atletas Botafogo 2024-1</h1>
+      <button id="logout">Sair</button>
+    </header>
+    <div id="barra-escolhas">
+      <button value="masculino">Masculino</button>
+      <button value="feminino">Feminino</button>
+      <button value="all">Elenco Completo</button>
+    </div>
+    <select id="select-plantel">
+      <option value="" disabled>Escolha o elenco</option>
+      <option value="masculino">Masculino</option>
+      <option value="feminino">Feminino</option>
+      <option value="all">Elenco Completo</option>
+    </select>
+    <h2 id="texto-espera">Carregando...</h2>
+    <div id="conteudo"></div>
+</body>
+</html>
