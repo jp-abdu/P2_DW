@@ -110,3 +110,5 @@ document.getElementById('select-plantel').addEventListener('change', (ev) => {
     else if (valor === 'feminino') url = 'https://botafogo-atletas.mange.li/2024-1/feminino';
     carregarDados(url);
 });
+
+document.getElementById('select-plantel').value = "";
